@@ -32,7 +32,7 @@ final class ViewController: UIViewController {
         redLight.alpha = lightIsOff
         
         greenLight.layer.cornerRadius = greenLight.frame.height / 2
-        yellowLight.layer.cornerRadius = yellowLight.frame.width / 2
+        yellowLight.layer.cornerRadius = yellowLight.frame.height / 2
         redLight.layer.cornerRadius = redLight.frame.height / 2
         
         changeColorButton.layer.cornerRadius = 20
@@ -63,7 +63,7 @@ final class ViewController: UIViewController {
 }
 
 extension ViewController {
-    enum Lights {
+    private enum Lights {
         case red, yellow, green
     }
 }
