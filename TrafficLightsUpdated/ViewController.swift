@@ -7,9 +7,9 @@
 
 import UIKit
 
-enum Lights {
-    case red, yellow, green
-}
+//enum Lights {
+  //  case red, yellow, green
+//}
 
 final class ViewController: UIViewController {
 
@@ -60,5 +60,11 @@ final class ViewController: UIViewController {
             }
     }
     
+}
+
+extension ViewController {
+    enum Lights {
+        case red, yellow, green
+    }
 }
 
